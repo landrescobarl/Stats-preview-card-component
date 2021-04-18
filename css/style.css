@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-mainBackground: hsl(233, 47%, 7%);
+  --color-cardBackground: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%, 0.5);
+  --family-title: "Inter", sans-serif;
+  --color-title: hsl(0, 0%, 100%);
+  --color-accent-title: hsl(277, 64%, 61%);
+  --family-text: "Lexend Deca", sans-serif;
+  --color-text: hsla(0, 0%, 100%, 0.75);
+  --color-heading: hsla(0, 0%, 100%, 0.6);
+  --size-root: calc(1rem - 6px);
+}
+
+body {
+  background-color: var(--color-mainBackground);
+}
+
+#root {
+  width: 100%;
+  height: 95.6em;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
+
+.card {
+  width: 32.7em;
+  max-width: 40em;
+  height: calc(54em + 24em);
+  border-radius: 1em;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--color-cardBackground);
+}
+
+.card-img {
+  width: 32.7em;
+  height: 24em;
+  background-image: linear-gradient(var(--color-accent), var(--color-accent));
+}
+.card-img img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.card-body {
+  width: 90%;
+  height: 54em;
+  display: grid;
+  place-items: center;
+}
+
+.card-title {
+  font-family: var(--family-title);
+  color: var(--color-title);
+  text-align: center;
+  padding: 0.5em 1em;
+}
+.card-title h2 {
+  font-size: calc(2rem - 2px);
+}
+.card-title span {
+  color: var(--color-accent-title);
+}
+
+.card-text {
+  font-size: 1rem;
+  font-family: var(--family-text);
+  color: var(--color-text);
+  text-align: center;
+  padding: 1em 0em;
+}
+
+.card-dates {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 0% 0%;
+}
+
+.card-date {
+  width: 10em;
+  height: 10em;
+  text-align: center;
+}
+.card-date :first-child {
+  color: var(--color-title);
+  font-family: var(--family-title);
+  font-weight: 700;
+  font-size: calc(2rem - 2px);
+}
+.card-date :last-child {
+  color: var(--color-heading);
+  font-family: var(--family-title);
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+@media screen and (min-width: 750px) {
+  .card {
+    width: 100%;
+    max-width: 111em;
+    height: auto;
+    max-height: 80em;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 10px;
+  }
+
+  .card-img {
+    width: 45%;
+    height: auto;
+    max-height: 80em;
+    order: 2;
+  }
+
+  .card-body {
+    width: 55%;
+    height: auto;
+    max-height: 80em;
+    padding: 5%;
+  }
+
+  .card-dates {
+    flex-direction: row-reverse;
+  }
+
+  .card-date {
+    width: calc(100% / 3);
+    text-align: left;
+  }
+
+  .card-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0em;
+  }
+
+  .card-text {
+    padding: 0em 1em 0em 0em;
+  }
+
+  .card-text, .card-title, .card-dates {
+    text-align: left;
+    width: 375px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
