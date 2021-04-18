@@ -65,7 +65,7 @@ body {
   font-family: var(--family-title);
   color: var(--color-title);
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 2em 1em;
 }
 .card-title h2 {
   font-size: calc(2rem - 2px);
@@ -135,7 +135,7 @@ body {
   }
 
   .card-dates {
-    flex-direction: row-reverse;
+    flex-direction: row;
   }
 
   .card-date {
