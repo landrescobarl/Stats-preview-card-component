@@ -24,7 +24,7 @@ Esta es una solución al [Desafío del componente de tarjeta de vista previa de 
 
 ### Screenshot
 
-![screenshot-projec](./screenshot.jpg)
+![screenshot-projec](./screenshot.png)
 
 ### Links
 
